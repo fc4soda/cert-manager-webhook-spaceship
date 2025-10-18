@@ -1,0 +1,12 @@
+
+{
+  "username": "<Spaceship.com username>",
+  "apiKeyRef": {
+    "Name": "spaceship-credentials",
+    "Key": "api-key"
+  },
+  "apiSecretRef": {
+    "Name": "spaceship-credentials",
+    "Key": "api-secret"
+  }
+}
