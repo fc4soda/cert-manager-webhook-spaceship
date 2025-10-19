@@ -15,7 +15,7 @@ certManager:
   serviceAccountName: cert-manager
 
 image:
-  repository: fc4soda/cert-manager-webhook-spaceship
+  repository: ghcr.io/fc4soda/cert-manager-webhook-spaceship # 使用ghcr必须指定ghcr.io前缀，docker.io可省略前缀
   tag: latest
   pullPolicy: IfNotPresent
 
