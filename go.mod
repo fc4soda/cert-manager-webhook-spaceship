@@ -1,12 +1,16 @@
-module github.com/cert-manager/webhook-example
+module github.com/fc4soda/cert-manager-webhook-spaceship
 
 go 1.22.0
 
 require (
 	github.com/cert-manager/cert-manager v1.15.1
+	github.com/fc4soda/libdns-spaceship v0.0.4
+	github.com/libdns/libdns v1.1.1
 	github.com/miekg/dns v1.1.61
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.11.1
+	k8s.io/api v0.30.2
 	k8s.io/apiextensions-apiserver v0.30.2
+	k8s.io/apimachinery v0.30.2
 	k8s.io/client-go v0.30.2
 )
 
@@ -93,8 +97,6 @@ require (
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/api v0.30.2 // indirect
-	k8s.io/apimachinery v0.30.2 // indirect
 	k8s.io/apiserver v0.30.2 // indirect
 	k8s.io/component-base v0.30.2 // indirect
 	k8s.io/klog/v2 v2.120.1 // indirect

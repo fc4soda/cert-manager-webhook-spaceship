@@ -8,14 +8,14 @@
 # The name will need to be referenced in each Issuer's `webhook` stanza to
 # inform cert-manager of where to send ChallengePayload resources in order to
 # solve the DNS01 challenge.
-groupName: acme.mycompany.com
+groupName: acme.spaceship.com
 
 certManager:
   namespace: cert-manager
   serviceAccountName: cert-manager
 
 image:
-  repository: mycompany/webhook-image
+  repository: ghcr.io/fc4soda/cert-manager-webhook-spaceship # 使用ghcr必须指定ghcr.io前缀，docker.io可省略前缀
   tag: latest
   pullPolicy: IfNotPresent
 
